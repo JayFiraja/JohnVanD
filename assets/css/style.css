@@ -1,16 +1,29 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 1rem 0;
   text-align: center;
+  padding: 1rem 0;
 }
 
 nav ul {
@@ -28,16 +41,31 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 2rem;
+section {
   margin: 2rem 0;
-  background: #fff;
-  border-radius: 5px;
 }
 
 footer {
   text-align: center;
   padding: 1rem 0;
-  background: #333;
-  color: #fff;
+}
+
+.linkedin-profile {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0077B5;
+  margin-top: 1rem;
+}
+
+.linkedin-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.linkedin-profile span {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
