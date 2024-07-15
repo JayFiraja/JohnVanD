@@ -4,40 +4,68 @@ title: Home
 permalink: /
 ---
 
-<div class="home">
-  <header>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <div class="content">
+    <header>
+      <h1>Welcome to My GitHub Pages Site</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/Pages/about/">About</a></li>
+          <li><a href="{{ site.baseurl }}/Pages/projects/">Projects</a></li>
+          <li><a href="{{ site.baseurl }}/Pages/blog/">Blog</a></li>
+          <li><a href="{{ site.baseurl }}/Pages/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is a brief introduction about myself. I am passionate about web development and open-source projects.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/Pages/about/">About</a></li>
-        <li><a href="/Pages/projects/">Projects</a></li>
-        <li><a href="/Pages/blog/">Blog</a></li>
-        <li><a href="/Pages/contact/">Contact</a></li>
+        <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
+        <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
+        <li><a href="https://github.com/yourusername/project3">Project 3</a></li>
       </ul>
-    </nav>
-  </header>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>This is a brief introduction about myself. I am passionate about web development and open-source projects.</p>
-  </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-      <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-      <li><a href="https://github.com/yourusername/project3">Project 3</a></li>
-    </ul>
-  </section>
+    <section id="linkedin">
+      <h2>Connect with Me on LinkedIn</h2>
+      <a href="https://www.linkedin.com/in/jayfiraja/" target="_blank" class="linkedin-profile">
+        <img src="{{ site.baseurl }}/assets/images/linkedin-profile.jpg" alt="LinkedIn Profile" class="linkedin-img">
+        <span>Jay Firaja</span>
+      </a>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-  </section>
+    <footer>
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
 
-  <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-  </footer>
-</div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', '{{ site.baseurl }}/assets/particles.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
+</body>
+</html>
