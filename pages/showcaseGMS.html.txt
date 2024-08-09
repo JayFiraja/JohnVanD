@@ -1,0 +1,21 @@
+<!-- pages/showcase.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMS Game Management Service</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>GMS Project Summary</h1>
+    <p>This is a brief summary of the GMS project...</p>
+
+    <h2>Screenshots</h2>
+    <img src="../assets/Kerbal Space Program 2.png" alt="Screenshot 1">
+    <img src="../assets/KSP-BreakingGround-DLC.png" alt="Screenshot 2">
+    <!-- Add more screenshots as needed -->
+
+    <a href="../docs/index.html" class="btn btn-primary">View Documentation</a>
+</body>
+</html>
