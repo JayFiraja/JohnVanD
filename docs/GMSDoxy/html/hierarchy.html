@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GMS: Class Hierarchy</title>
+<title>GMS (Game Management Service): Class Hierarchy</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,8 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">GMS
+   <div id="projectname">GMS (Game Management Service)<span id="projectnumber">&#160;1.0</span>
    </div>
+   <div id="projectbrief">Data driven Game Management system.</div>
   </td>
  </tr>
  </tbody>
@@ -93,13 +94,13 @@ $(function(){ initResizable(false); });
 <tr id="row_0_0_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_link_data_logic_attribute.html" target="_self">GMS.LinkDataLogicAttribute</a></td><td class="desc">This class allows us to link a Logic class to a data struct The use case is to initialize a Logic class and pass in the data in it's constructor </td></tr>
 <tr id="row_1_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_game_manager.html" target="_self">GMS.GameManager</a></td><td class="desc">Logic class for managing all submanagers </td></tr>
 <tr id="row_2_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="interface_g_m_s_1_1_i_sub_manager.html" target="_self">GMS.ISubManager</a></td><td class="desc">To be implemented by submanagers Makes it easy to Main stream behaviour for all submanagers by <a class="el" href="class_g_m_s_1_1_game_manager.html" title="Logic class for managing all submanagers.">GameManager</a> </td></tr>
-<tr id="row_3_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="interface_g_m_s_1_1_i_sub_manager_data.html" target="_self">GMS.ISubManagerData</a></td><td class="desc">Interface for allowing serialization of Data Structs in <a class="el" href="class_g_m_s_1_1_game_manager_data.html">GameManagerData</a> </td></tr>
+<tr id="row_3_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="interface_g_m_s_1_1_i_sub_manager_data.html" target="_self">GMS.ISubManagerData</a></td><td class="desc">Interface for allowing serialization of Data Structs in <a class="el" href="class_g_m_s_1_1_game_manager_data.html" title="Wrapper for being able to easily select SubManagers. Once a submanager is selected the corresponding ...">GameManagerData</a> </td></tr>
 <tr id="row_4_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_4_" class="arrow" onclick="dynsection.toggleFolder('4_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>MonoBehaviour</b></td><td class="desc"></td></tr>
 <tr id="row_4_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_game_instance.html" target="_self">GMS.GameInstance</a></td><td class="desc">Singleton ServiceLocator Single point of contact for subManagers Initialization Holds the content Transforms for the subManager View elements </td></tr>
 <tr id="row_5_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_5_" class="arrow" onclick="dynsection.toggleFolder('5_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>PropertyAttribute</b></td><td class="desc"></td></tr>
-<tr id="row_5_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_addressable_selector_attribute.html" target="_self">GMS.AddressableSelectorAttribute</a></td><td class="desc"></td></tr>
+<tr id="row_5_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_addressable_selector_attribute.html" target="_self">GMS.AddressableSelectorAttribute</a></td><td class="desc">Attribute for strings, works with AddressableSelectorDrawer in order to draw a select button and popup for easily selecting an existing Addressable key </td></tr>
 <tr id="row_6_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_6_" class="arrow" onclick="dynsection.toggleFolder('6_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><b>ScriptableObject</b></td><td class="desc"></td></tr>
-<tr id="row_6_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_game_manager_data.html" target="_self">GMS.GameManagerData</a></td><td class="desc"></td></tr>
+<tr id="row_6_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="class_g_m_s_1_1_game_manager_data.html" target="_self">GMS.GameManagerData</a></td><td class="desc">Wrapper for being able to easily select SubManagers. Once a submanager is selected the corresponding submanager data struct shows up. GameManagerDataEditor for editor drawing </td></tr>
 <tr id="row_7_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="struct_g_m_s_1_1_sub_manager_data.html" target="_self">GMS.SubManagerData</a></td><td class="desc">Wrapper for being able to select Sub managers in the inspector for our Scriptable Objects </td></tr>
 <tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="struct_g_m_s_1_1_sub_manager_edit.html" target="_self">GMS.SubManagerEdit</a></td><td class="desc">Wrapper for editing SubManager into a list </td></tr>
 </table>
