@@ -1,0 +1,67 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <div class="content">
+    <header>
+      <h1>Welcome</h1>
+    </header>
+
+    <section id="gameportfolio">
+      <h2>Game Portfolio</h2>
+      <div class ="portfolio-item">
+        <img sfc="{{ site.baseurl }}/assets/images/Kerbal Space Program 2.jpg" alt="KSP2">
+        <p><a href="https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/">Game 1</a></p>
+      </div>
+        <div class ="portfolio-item">
+        <img sfc="{{ site.baseurl }}/assets/images/KSP-BreakingGround-DLC.png" alt="KSP_BreakingGround">
+        <p><a href="https://store.steampowered.com/app/982970/Kerbal_Space_Program_Breaking_Ground_Expansion/">Game 1</a></p>
+      </div>
+    </section>
+
+    <section id="unityAssets">
+      <h2>Unity Assets</h2>
+      <ul>
+        <li><a href="pages/showcaseGMS.html">GMS (Game Management Service)</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Unity Asset support</h2>
+      <p>You can reach me at <a href="mailto:johnvandunity@gmail.com">johnvandunity@gmail.com</a>.</p>
+    </section>
+
+    <section id="linkedin">
+      <h2>Connect with Me on LinkedIn</h2>
+      <a href="https://www.linkedin.com/in/jayfiraja/" target="_blank" class="linkedin-profile">
+        <img src="{{ site.baseurl }}/assets/images/linkedin-profile.png" alt="LinkedIn Profile" class="linkedin-img">
+        <span>Jay Firaja</span>
+      </a>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', '{{ site.baseurl }}/assets/particles.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+\doxysection{GMS.\+Game\+Manager Class Reference}
+\hypertarget{class_g_m_s_1_1_game_manager}{}\label{class_g_m_s_1_1_game_manager}\index{GMS.GameManager@{GMS.GameManager}}
+
+
+Logic class for managing all submanagers.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_g_m_s_1_1_game_manager_acf3fc49875b99c329f8664f1637eb894}{Load\+Data}} (\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}} game\+Manager\+Data)
+\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_manager_a38dfb0459a579a9a7bb05d880dc7d7c0}{Try\+Enqueue\+Sub\+Manager}} (\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}} data, \mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}} sub\+Manager\+Data, out \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}} sub\+Manager)
+\begin{DoxyCompactList}\small\item\em Tries to add a new unique instance to the list of sub\+Managers, will return false if it already exists or data was invalid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_manager_adf7b1d36aacdb2f27016c6159621da5b}{Try\+Enqueue\+Sub\+Manager\+For\+Removal}} (\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}} sub\+Manager\+Data)
+\begin{DoxyCompactList}\small\item\em Tries to remove an instance from the list of sub\+Managers, will return false if it doesn\textquotesingle{}t exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_m_s_1_1_game_manager_a4229f39d222cf7dad9b5ff833ea894cd}{Update\+Sub\+Managers}} ()
+\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_manager_a020355f7640f6f99277d58156e9e5e19}{Try\+Get\+Sub\+Manager$<$ T $>$}} (out T sub\+Manager)
+\begin{DoxyCompactList}\small\item\em Attempts to get an existing Sub\+Manager by type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logic class for managing all submanagers. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_g_m_s_1_1_game_manager_acf3fc49875b99c329f8664f1637eb894}\index{GMS.GameManager@{GMS.GameManager}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!GMS.GameManager@{GMS.GameManager}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_manager_acf3fc49875b99c329f8664f1637eb894} 
+void GMS.\+Game\+Manager.\+Load\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}}}]{game\+Manager\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_g_m_s_1_1_game_manager_a38dfb0459a579a9a7bb05d880dc7d7c0}\index{GMS.GameManager@{GMS.GameManager}!TryEnqueueSubManager@{TryEnqueueSubManager}}
+\index{TryEnqueueSubManager@{TryEnqueueSubManager}!GMS.GameManager@{GMS.GameManager}}
+\doxysubsubsection{\texorpdfstring{TryEnqueueSubManager()}{TryEnqueueSubManager()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_manager_a38dfb0459a579a9a7bb05d880dc7d7c0} 
+bool GMS.\+Game\+Manager.\+Try\+Enqueue\+Sub\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}}}]{data}{, }\item[{\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}}}]{sub\+Manager\+Data}{, }\item[{out \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}}}]{sub\+Manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to add a new unique instance to the list of sub\+Managers, will return false if it already exists or data was invalid. 
+
+\Hypertarget{class_g_m_s_1_1_game_manager_adf7b1d36aacdb2f27016c6159621da5b}\index{GMS.GameManager@{GMS.GameManager}!TryEnqueueSubManagerForRemoval@{TryEnqueueSubManagerForRemoval}}
+\index{TryEnqueueSubManagerForRemoval@{TryEnqueueSubManagerForRemoval}!GMS.GameManager@{GMS.GameManager}}
+\doxysubsubsection{\texorpdfstring{TryEnqueueSubManagerForRemoval()}{TryEnqueueSubManagerForRemoval()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_manager_adf7b1d36aacdb2f27016c6159621da5b} 
+bool GMS.\+Game\+Manager.\+Try\+Enqueue\+Sub\+Manager\+For\+Removal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}}}]{sub\+Manager\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to remove an instance from the list of sub\+Managers, will return false if it doesn\textquotesingle{}t exist. 
+
+\Hypertarget{class_g_m_s_1_1_game_manager_a020355f7640f6f99277d58156e9e5e19}\index{GMS.GameManager@{GMS.GameManager}!TryGetSubManager$<$ T $>$@{TryGetSubManager$<$ T $>$}}
+\index{TryGetSubManager$<$ T $>$@{TryGetSubManager$<$ T $>$}!GMS.GameManager@{GMS.GameManager}}
+\doxysubsubsection{\texorpdfstring{TryGetSubManager$<$ T $>$()}{TryGetSubManager< T >()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_manager_a020355f7640f6f99277d58156e9e5e19} 
+bool GMS.\+Game\+Manager.\+Try\+Get\+Sub\+Manager$<$ T $>$ (\begin{DoxyParamCaption}\item[{out T}]{sub\+Manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Attempts to get an existing Sub\+Manager by type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the sub\+Manager\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+True if sub\+Manager is found and valid
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em ISub\+Manager}]\end{description}
+\end{Desc}
+\Hypertarget{class_g_m_s_1_1_game_manager_a4229f39d222cf7dad9b5ff833ea894cd}\index{GMS.GameManager@{GMS.GameManager}!UpdateSubManagers@{UpdateSubManagers}}
+\index{UpdateSubManagers@{UpdateSubManagers}!GMS.GameManager@{GMS.GameManager}}
+\doxysubsubsection{\texorpdfstring{UpdateSubManagers()}{UpdateSubManagers()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_manager_a4229f39d222cf7dad9b5ff833ea894cd} 
+void GMS.\+Game\+Manager.\+Update\+Sub\+Managers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Assets/\+GMS/\+Base/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}

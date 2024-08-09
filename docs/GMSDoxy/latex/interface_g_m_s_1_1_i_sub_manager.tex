@@ -1,0 +1,80 @@
+\doxysection{GMS.\+ISub\+Manager Interface Reference}
+\hypertarget{interface_g_m_s_1_1_i_sub_manager}{}\label{interface_g_m_s_1_1_i_sub_manager}\index{GMS.ISubManager@{GMS.ISubManager}}
+
+
+To be implemented by submanagers Makes it easy to Main stream behaviour for all submanagers by \doxylink{class_g_m_s_1_1_game_manager}{Game\+Manager}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager_a9ecdd6362b6884caed5614f106642071}{Initialize}} (\mbox{\hyperlink{class_g_m_s_1_1_game_manager}{Game\+Manager}} game\+Manager)
+\begin{DoxyCompactList}\small\item\em Initializes this sub\+Manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager_a95c6cd630459ebb5246a6232aa7ebfdf}{Un\+Initialize}} ()
+\begin{DoxyCompactList}\small\item\em Run unsubscriptions, despawning, cleanup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager_ad66801d75fccf556e7d8ee1b7b456f2e}{On\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Tick called by Game\+Manager.\+Update method. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager_a00d55e3deb97a59ac4ebe627bca712a7}{Equals}} (\mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}} other)
+\begin{DoxyCompactList}\small\item\em Checks if the passed-\/in object is equal to this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+To be implemented by submanagers Makes it easy to Main stream behaviour for all submanagers by \doxylink{class_g_m_s_1_1_game_manager}{Game\+Manager}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_g_m_s_1_1_i_sub_manager_a00d55e3deb97a59ac4ebe627bca712a7}\index{GMS.ISubManager@{GMS.ISubManager}!Equals@{Equals}}
+\index{Equals@{Equals}!GMS.ISubManager@{GMS.ISubManager}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{interface_g_m_s_1_1_i_sub_manager_a00d55e3deb97a59ac4ebe627bca712a7} 
+bool GMS.\+ISub\+Manager.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}}}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the passed-\/in object is equal to this instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other sub\+Manager to compare against.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal, false otherwise.
+\end{DoxyReturn}
+\Hypertarget{interface_g_m_s_1_1_i_sub_manager_a9ecdd6362b6884caed5614f106642071}\index{GMS.ISubManager@{GMS.ISubManager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!GMS.ISubManager@{GMS.ISubManager}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{interface_g_m_s_1_1_i_sub_manager_a9ecdd6362b6884caed5614f106642071} 
+bool GMS.\+ISub\+Manager.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_m_s_1_1_game_manager}{Game\+Manager}}}]{game\+Manager}{}\end{DoxyParamCaption})}
+
+
+
+Initializes this sub\+Manager. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{interface_g_m_s_1_1_i_sub_manager_ad66801d75fccf556e7d8ee1b7b456f2e}\index{GMS.ISubManager@{GMS.ISubManager}!OnUpdate@{OnUpdate}}
+\index{OnUpdate@{OnUpdate}!GMS.ISubManager@{GMS.ISubManager}}
+\doxysubsubsection{\texorpdfstring{OnUpdate()}{OnUpdate()}}
+{\footnotesize\ttfamily \label{interface_g_m_s_1_1_i_sub_manager_ad66801d75fccf556e7d8ee1b7b456f2e} 
+void GMS.\+ISub\+Manager.\+On\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tick called by Game\+Manager.\+Update method. 
+
+\Hypertarget{interface_g_m_s_1_1_i_sub_manager_a95c6cd630459ebb5246a6232aa7ebfdf}\index{GMS.ISubManager@{GMS.ISubManager}!UnInitialize@{UnInitialize}}
+\index{UnInitialize@{UnInitialize}!GMS.ISubManager@{GMS.ISubManager}}
+\doxysubsubsection{\texorpdfstring{UnInitialize()}{UnInitialize()}}
+{\footnotesize\ttfamily \label{interface_g_m_s_1_1_i_sub_manager_a95c6cd630459ebb5246a6232aa7ebfdf} 
+void GMS.\+ISub\+Manager.\+Un\+Initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Run unsubscriptions, despawning, cleanup. 
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Assets/\+GMS/\+Base/\mbox{\hyperlink{_i_sub_manager_8cs}{ISub\+Manager.\+cs}}\end{DoxyCompactItemize}

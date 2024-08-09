@@ -1,0 +1,104 @@
+\doxysection{GMS.\+Game\+Instance Class Reference}
+\hypertarget{class_g_m_s_1_1_game_instance}{}\label{class_g_m_s_1_1_game_instance}\index{GMS.GameInstance@{GMS.GameInstance}}
+
+
+Singleton Service\+Locator Single point of contact for sub\+Managers Initialization Holds the content Transforms for the sub\+Manager View elements.  
+
+
+Inheritance diagram for GMS.\+Game\+Instance\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_m_s_1_1_game_instance}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_instance_a2689939c2df2c80c094caa61f8c26ccc}{Try\+Enqueue\+Sub\+Manager}} (\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}} data, \mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}} sub\+Manager\+Data, out \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}} sub\+Manager)
+\begin{DoxyCompactList}\small\item\em Tries to add a new unique instance to the list of sub\+Managers, will return false if it already exists or data was invalid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_instance_a7502a61bc23ead3f2b7a25898b4ed372}{Try\+Enqueue\+Sub\+Manager\+For\+Removal}} (\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}} sub\+Manager\+Data)
+\begin{DoxyCompactList}\small\item\em Tries to remove an instance from the list of sub\+Managers, will return false if it doesn\textquotesingle{}t exist from Game Manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_g_m_s_1_1_game_instance_aa086b7a8575a3355a96b5f99704298ca}{Try\+Get\+Sub\+Manager$<$ T $>$}} (out T sub\+Manager)
+\begin{DoxyCompactList}\small\item\em Attempts to get an existing Sub\+Manager by type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_g_m_s_1_1_game_instance_abe78dbcee572c5164342d4b1f0567ac6}{Initialized}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Has Game Instance been initialized. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_g_m_s_1_1_game_instance}{Game\+Instance}} \mbox{\hyperlink{class_g_m_s_1_1_game_instance_a54657a79f4ae7cebb446721396da9903}{S}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton Service\+Locator Single point of contact for sub\+Managers Initialization Holds the content Transforms for the sub\+Manager View elements. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_g_m_s_1_1_game_instance_a2689939c2df2c80c094caa61f8c26ccc}\index{GMS.GameInstance@{GMS.GameInstance}!TryEnqueueSubManager@{TryEnqueueSubManager}}
+\index{TryEnqueueSubManager@{TryEnqueueSubManager}!GMS.GameInstance@{GMS.GameInstance}}
+\doxysubsubsection{\texorpdfstring{TryEnqueueSubManager()}{TryEnqueueSubManager()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_instance_a2689939c2df2c80c094caa61f8c26ccc} 
+bool GMS.\+Game\+Instance.\+Try\+Enqueue\+Sub\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_g_m_s_1_1_game_manager_data}{Game\+Manager\+Data}}}]{data}{, }\item[{\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}}}]{sub\+Manager\+Data}{, }\item[{out \mbox{\hyperlink{interface_g_m_s_1_1_i_sub_manager}{ISub\+Manager}}}]{sub\+Manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to add a new unique instance to the list of sub\+Managers, will return false if it already exists or data was invalid. 
+
+\Hypertarget{class_g_m_s_1_1_game_instance_a7502a61bc23ead3f2b7a25898b4ed372}\index{GMS.GameInstance@{GMS.GameInstance}!TryEnqueueSubManagerForRemoval@{TryEnqueueSubManagerForRemoval}}
+\index{TryEnqueueSubManagerForRemoval@{TryEnqueueSubManagerForRemoval}!GMS.GameInstance@{GMS.GameInstance}}
+\doxysubsubsection{\texorpdfstring{TryEnqueueSubManagerForRemoval()}{TryEnqueueSubManagerForRemoval()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_instance_a7502a61bc23ead3f2b7a25898b4ed372} 
+bool GMS.\+Game\+Instance.\+Try\+Enqueue\+Sub\+Manager\+For\+Removal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_g_m_s_1_1_sub_manager_data}{Sub\+Manager\+Data}}}]{sub\+Manager\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Tries to remove an instance from the list of sub\+Managers, will return false if it doesn\textquotesingle{}t exist from Game Manager. 
+
+\Hypertarget{class_g_m_s_1_1_game_instance_aa086b7a8575a3355a96b5f99704298ca}\index{GMS.GameInstance@{GMS.GameInstance}!TryGetSubManager$<$ T $>$@{TryGetSubManager$<$ T $>$}}
+\index{TryGetSubManager$<$ T $>$@{TryGetSubManager$<$ T $>$}!GMS.GameInstance@{GMS.GameInstance}}
+\doxysubsubsection{\texorpdfstring{TryGetSubManager$<$ T $>$()}{TryGetSubManager< T >()}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_instance_aa086b7a8575a3355a96b5f99704298ca} 
+static bool GMS.\+Game\+Instance.\+Try\+Get\+Sub\+Manager$<$ T $>$ (\begin{DoxyParamCaption}\item[{out T}]{sub\+Manager}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Attempts to get an existing Sub\+Manager by type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the sub\+Manager\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+True if sub\+Manager is found and valid
+\end{DoxyReturn}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em ISub\+Manager}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_g_m_s_1_1_game_instance_abe78dbcee572c5164342d4b1f0567ac6}\index{GMS.GameInstance@{GMS.GameInstance}!Initialized@{Initialized}}
+\index{Initialized@{Initialized}!GMS.GameInstance@{GMS.GameInstance}}
+\doxysubsubsection{\texorpdfstring{Initialized}{Initialized}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_instance_abe78dbcee572c5164342d4b1f0567ac6} 
+bool GMS.\+Game\+Instance.\+Initialized\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Has Game Instance been initialized. 
+
+\Hypertarget{class_g_m_s_1_1_game_instance_a54657a79f4ae7cebb446721396da9903}\index{GMS.GameInstance@{GMS.GameInstance}!S@{S}}
+\index{S@{S}!GMS.GameInstance@{GMS.GameInstance}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \label{class_g_m_s_1_1_game_instance_a54657a79f4ae7cebb446721396da9903} 
+\mbox{\hyperlink{class_g_m_s_1_1_game_instance}{Game\+Instance}} GMS.\+Game\+Instance.\+S\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Project/\+Assets/\+GMS/\+Base/\mbox{\hyperlink{_game_instance_8cs}{Game\+Instance.\+cs}}\end{DoxyCompactItemize}
