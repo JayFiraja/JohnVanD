@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="/JohnVanD/assets/css/style.css">
 </head>
 
 <body>
@@ -11,23 +11,80 @@
   <div id="particles-js"></div>
   <div class="content">
   
-    <section id="gameportfolio">
-      <h2>Game Portfolio</h2>
-      <div class ="portfolio-item">
-        <img src="{{ site.baseurl }}/assets/images/KSP2.jpg" alt="KSP2">
-        <p><a href="https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/">Steam Store Link</a></p>
-      </div>
-        <div class ="portfolio-item">
-        <img src="{{ site.baseurl }}/assets/images/KSP_DLC2.png" alt="KSP_DLC2">
-        <p><a href="https://store.steampowered.com/app/982970/Kerbal_Space_Program_Breaking_Ground_Expansion/">Steam Store Link</a></p>
-      </div>
-    </section>
+  <section id="gameportfolio">
+	<h2>Game Portfolio</h2>
+	<div class="portfolio-grid">
+	
+		<div class="portfolio-game">
+		<div class="release-date">February 2023</div>
+		<img src="/JohnVanD/assets/images/KSP2.png" alt="KSP2" class="portfolio-img">
+		<p>Kerbal Space Program 2</p>
+		<p><a href="https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/" target="_blank">
+		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		   </div>
+		<div class="portfolio-game">
+		<div class="release-date">April 27, 2015</div>
+		<img src="/JohnVanD/assets/images/KSP.png" alt="KSP" class="portfolio-img">
+		<p>Kerbal Space Program</p>
+		 <p>
+			<a href="https://store.steampowered.com/app/220200/Kerbal_Space_Program/" target="_blank">
+		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a>		   
+		   <a href="https://www.xbox.com/en-US/games/store/kerbal-space-program-enhanced-edition/BRBD7BDK271P/" target="_blank">
+		    <img src="/JohnVanD/assets/images/xbox_icon.png" alt="Xbox Store" class="Xbox-icon"></a>
+			<a href="https://www.playstation.com/en-us/games/kerbal-space-program/" target="_blank">
+		    <img src="/JohnVanD/assets/images/playstation_icon.png" alt="PlayStation Store" class="playstation-icon"></a>
+		 </p>
+		</div>
+		
+		<div class="portfolio-game">
+		<div class="release-date">March 2018</div>
+		<img src="/JohnVanD/assets/images/KSP_DLC1.png" alt="KSP_DLC2" class="portfolio-img">
+		<p>KSP Making History DLC 1</p>
+		<p><a href="https://store.steampowered.com/app/283740/Kerbal_Space_Program_Making_History_Expansion/" target="_blank">
+		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		</div>
+		<div class="portfolio-game">
+		<div class="release-date">May 2019</div>
+		<img src="/JohnVanD/assets/images/KSP_DLC2.png" alt="KSP_DLC2" class="portfolio-img">
+		<p>KSP Breaking Ground DLC 2</p>
+		<p>
+			<a href="https://store.steampowered.com/app/982970/Kerbal_Space_Program_Breaking_Ground_Expansion/" target="_blank">
+		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a>
+		   <a href="https://www.xbox.com/en-US/games/store/kerbal-space-program-breaking-ground/9N4CC88JXM7H/0010" target="_blank">
+		    <img src="/JohnVanD/assets/images/xbox_icon.png" alt="Steam Store" class="Xbox-icon"></a>
+		</p>
+		</div>
+		<div class="portfolio-game">
+		<div class="release-date">July 2017</div>
+		<img src="/JohnVanD/assets/images/BlockSurvivall.png" alt="KSP_DLC2" class="portfolio-img">
+		<p>Block Survival: Legend of the Lost Islands</p>
+		<p><a href="https://store.steampowered.com/app/641980/Block_Survival_Legend_of_the_Lost_Islands/" target="_blank">
+		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		</div>
+		
+		<div class="portfolio-game">
+		<div class="video-container">
+			<iframe width="300" height="169" src="https://www.youtube.com/embed/aoMZSVem2NM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p>4TheKing (mobile)</p>
+		<p>
+			<a href="https://www.youtube.com/watch?v=aoMZSVem2NM" target="_blank"></a>
+		</p>
+		</div>
+	</div>
+	</section>
 
     <section id="unityAssets">
       <h2>Unity Assets</h2>
-      <ul>
-        <li><a href="pages/showcaseGMS.html">GMS (Game Management Service)</a></li>
-      </ul>
+	  <div class="portfolio-grid">
+	
+		<div class="portfolio-UnityAsset">
+			<div class="release-dateAsset">August 2024</div>
+			<img src="/JohnVanD/assets/images/GMS_Banner.png" alt="GMSBanner" class="portfolio-img">
+			<p>GMS (Game Management Service)</p>
+			<p><a href="pages/showcaseGMS.html" target="_blank"></a>
+			</p>
+			</div>
     </section>
 
     <section id="contact">
@@ -38,12 +95,13 @@
     <section id="linkedin">
       <h2>Connect with Me on LinkedIn</h2>
       <a href="https://www.linkedin.com/in/jayfiraja/" target="_blank" class="linkedin-profile">
-        <img src="{{ site.baseurl }}/assets/images/linkedin-profile.png" alt="LinkedIn Profile" class="linkedin-img">
+        <img src="/JohnVanD/assets/images/linkedin-profile.png" alt="LinkedIn Profile" class="linkedin-img">
         <span>Jay Firaja</span>
       </a>
     </section>
 
     <footer>
+      <p>&copy; Kerbal Space Program is property of Take-Two Interactive,Inc.</p>
       <p>&copy; 2024 John F. Del Valle. All rights reserved.</p>
     </footer>
   </div>
