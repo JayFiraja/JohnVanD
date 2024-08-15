@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="/JohnVanD/assets/images/JohnVanD_Site_Icon.png">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }} - {{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="/JohnVanD/assets/images/JohnVanD_Site_Icon.png">
+
+  <link rel="stylesheet" href="/JohnVanD/assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="/JohnVanD/">
+        <img src="/JohnVanD/assets/images/JohnVanD_Site_Icon.png" alt="Site Icon" class="site-icon">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; 2024 John F. Del Valle. All rights reserved.</p>
+  </footer>
+</body>
+</html>

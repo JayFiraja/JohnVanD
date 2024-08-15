@@ -1,21 +1,83 @@
-<!-- pages/showcase.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMS (Game Management Service)</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-    <h1>GMS Project Summary</h1>
-    <p>Data Driven Game management service</p>
+---
+title: "GMS Asset"
+layout: default
+---
 
-    <h2>Screenshots</h2>
-    <img src="../assets/Kerbal Space Program 2.png" alt="Screenshot 1">
-    <img src="../assets/KSP-BreakingGround-DLC.png" alt="Screenshot 2">
-    <!-- Add more screenshots as needed -->
+<section id="GMS">
+  <div class="unityAsset-grid">
 
-    <a href="../docs/GMSDoxy/html/index.html" class="btn btn-primary">View Documentation</a>
-</body>
-</html>
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/screenshot_01.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>Get the "Big Picture" of the game managers and Assets at a glance.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/GMS_Site_Manual.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>GMS PDF Manual</p>
+        <div class="pdf-manual">
+          <a href="/JohnVanD/assets/manuals/GMSv1_0.pdf" target="_blank">
+            <img src="/JohnVanD/assets/images/pdfIcon.png" alt="PDF Icon" class="documentation-icon">
+            <span class="pdf-text">Download the GMS Manual</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/screenshot_02.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>Includes a Create SubManager window tool for creating and deleting subManagers logic classes and their data struct.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/screenshot_03.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>Logic managers get their data injected upon creation at their constructor, never worry of racing conditions or missing data.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/screenshot_04.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>Included game sample with cute bouncing dark minion baby, that collects gems. Play with the minimal gameplay in order to quickly grasp GMS.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/screenshot_05.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>Included full game sample of a tic tac toe with unit tests validating the functionality, includes assets and session outcomes from the classic game.</p>
+      </div>
+    </div>
+
+    <div class="portfolio-UnityAssetButton" onclick="toggleDescription(this)">
+      <img src="/JohnVanD/assets/images/UnityAssets/GMS/DoxygenDocumentation.png" alt="GMS Banner" class="portfolio-img-large">
+      <div class="description-content">
+        <p>GMS API</p>
+        <div class="pdf-manual">
+          <a href="/JohnVanD/docs/GMSDoxy/html/index.html" target="_blank">
+            <img src="/JohnVanD/assets/images/GearIcon.png" alt="Documentation Icon" class="documentation-icon">
+            View GMS API Doxygen
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function toggleDescription(element) {
+    element.classList.toggle("active");
+    var allItems = document.querySelectorAll(".portfolio-UnityAssetButton");
+    allItems.forEach(function (item) {
+      if (item !== element) {
+        item.classList.remove("active");
+      }
+    });
+  }
+</script>

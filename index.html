@@ -1,10 +1,9 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="/JohnVanD/assets/css/style.css">
-</head>
+---
+title: "Home"
+layout: default
+---
+
+<!DOCTYPE html>
 
 <body>
 
@@ -20,7 +19,7 @@
 		<img src="/JohnVanD/assets/images/KSP2.png" alt="KSP2" class="portfolio-img">
 		<p>Kerbal Space Program 2</p>
 		<p><a href="https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/" target="_blank">
-		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		   <img src="/JohnVanD/assets/images/Steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
 		   </div>
 		<div class="portfolio-game">
 		<div class="release-date">April 27, 2015</div>
@@ -28,9 +27,9 @@
 		<p>Kerbal Space Program</p>
 		 <p>
 			<a href="https://store.steampowered.com/app/220200/Kerbal_Space_Program/" target="_blank">
-		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a>		   
+		   <img src="/JohnVanD/assets/images/Steam_icon.png" alt="Steam Store" class="steam-icon"></a>		   
 		   <a href="https://www.xbox.com/en-US/games/store/kerbal-space-program-enhanced-edition/BRBD7BDK271P/" target="_blank">
-		    <img src="/JohnVanD/assets/images/xbox_icon.png" alt="Xbox Store" class="Xbox-icon"></a>
+		    <img src="/JohnVanD/assets/images/Xbox_icon.png" alt="Xbox Store" class="xbox-icon"></a>
 			<a href="https://www.playstation.com/en-us/games/kerbal-space-program/" target="_blank">
 		    <img src="/JohnVanD/assets/images/playstation_icon.png" alt="PlayStation Store" class="playstation-icon"></a>
 		 </p>
@@ -41,7 +40,7 @@
 		<img src="/JohnVanD/assets/images/KSP_DLC1.png" alt="KSP_DLC2" class="portfolio-img">
 		<p>KSP Making History DLC 1</p>
 		<p><a href="https://store.steampowered.com/app/283740/Kerbal_Space_Program_Making_History_Expansion/" target="_blank">
-		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		   <img src="/JohnVanD/assets/images/Steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
 		</div>
 		<div class="portfolio-game">
 		<div class="release-date">May 2019</div>
@@ -49,9 +48,9 @@
 		<p>KSP Breaking Ground DLC 2</p>
 		<p>
 			<a href="https://store.steampowered.com/app/982970/Kerbal_Space_Program_Breaking_Ground_Expansion/" target="_blank">
-		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a>
+		   <img src="/JohnVanD/assets/images/Steam_icon.png" alt="Steam Store" class="steam-icon"></a>
 		   <a href="https://www.xbox.com/en-US/games/store/kerbal-space-program-breaking-ground/9N4CC88JXM7H/0010" target="_blank">
-		    <img src="/JohnVanD/assets/images/xbox_icon.png" alt="Steam Store" class="Xbox-icon"></a>
+		    <img src="/JohnVanD/assets/images/Xbox_icon.png" alt="Steam Store" class="xbox-icon"></a>
 		</p>
 		</div>
 		<div class="portfolio-game">
@@ -59,7 +58,7 @@
 		<img src="/JohnVanD/assets/images/BlockSurvivall.png" alt="KSP_DLC2" class="portfolio-img">
 		<p>Block Survival: Legend of the Lost Islands</p>
 		<p><a href="https://store.steampowered.com/app/641980/Block_Survival_Legend_of_the_Lost_Islands/" target="_blank">
-		   <img src="/JohnVanD/assets/images/steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
+		   <img src="/JohnVanD/assets/images/Steam_icon.png" alt="Steam Store" class="steam-icon"></a></p>
 		</div>
 		
 		<div class="portfolio-game">
@@ -80,11 +79,12 @@
 	
 		<div class="portfolio-UnityAsset">
 			<div class="release-dateAsset">August 2024</div>
-			<img src="/JohnVanD/assets/images/GMS_Banner.png" alt="GMSBanner" class="portfolio-img">
-			<p>GMS (Game Management Service)</p>
-			<p><a href="pages/showcaseGMS.html" target="_blank"></a>
-			</p>
+				<a href="pages/showcaseGMS.html" target="_blank">
+					<img src="/JohnVanD/assets/images/GMS_Banner.png" alt="GMSBanner" class="portfolio-img">
+					<p>GMS (Game Management Service)</p>
+				</a>
 			</div>
+			
     </section>
 
     <section id="contact">
@@ -108,7 +108,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script>
-    particlesJS.load('particles-js', '{{ site.baseurl }}/assets/particles.json', function() {
+    particlesJS.load('particles-js', '/JohnVanD/assets/particles.json', function() {
       console.log('particles.js loaded - callback');
     });
   </script>
